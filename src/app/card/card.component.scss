@@ -1,0 +1,114 @@
+// Full tutorial coming soon!
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    --card-gradient: rgba(0, 0, 0, 0.8);
+    // --card-gradient: #5e9ad9, #e271ad;
+    --card-blend-mode: overlay;
+    font-family: 'Open Sans', sans-serif;
+    color: #285430;
+    margin: 10%;
+  -webkit-transition-duration: 1s;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    padding-bottom: 1rem;
+    background-image: linear-gradient(
+      var(--card-gradient),
+      white max(9.5rem, 27vh)
+    );
+    overflow: hidden;
+  
+    img {
+      border-radius: 0.5rem 0.5rem 0 0;
+      width: 100%;
+      object-fit: cover;
+      // height: max(10rem, 25vh);
+      max-height: max(10rem, 30vh);
+      aspect-ratio: 4/3;
+      mix-blend-mode: var(--card-blend-mode);
+      // filter: grayscale(100);
+  
+      ~ * {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+  
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    
+  
+   
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+      helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    color: #444;
+    background-color: #E5D9B6;
+  }
+  
+  .card h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .card p
+  {
+    margin-top: 10%;
+    font-size: 80%;
+  }
+
+  .button
+{   
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    font-weight: lighter;
+    background: #5F8D4E;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card:hover , .card:focus, .card:active
+{
+    -webkit-transform: scale(1.1);
+}
+
+.button:hover , .button:focus, .button:active
+{
+    background: white;
+    color: #285430;
+}
+  
+
+
+  .center
+  {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  
+  
